@@ -5,3 +5,14 @@
 3. Executor: Thread or slot for execution of jobs. 
 4. Build: Result got after executing a Job
 5. Plugin: Software that extends core functionality of Jenkins.
+
+### Jenkins Dashboard: 
+
+- Manage Jenkins 
+  - Configure Plugins
+  - Configure Nodes
+- Build History
+- My Views 
+  - Sun (Last 5 builds successful)
+  - Cloud (Job has failed few times)
+  - Thunder Cloud (Job is failing continuosly)
