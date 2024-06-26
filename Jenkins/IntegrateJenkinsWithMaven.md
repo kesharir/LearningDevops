@@ -1,0 +1,2 @@
+- Using Maven Plugin 
+- Without using maven plugin
