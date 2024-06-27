@@ -16,3 +16,18 @@
 - Dig into issues
 - Visualize history of project
 
+### Integrating SonarQube : 
+
+- Create a local project on sonar
+- Run on cmd below: 
+
+```
+mvn clean verify sonar:sonar 
+ -Dsonar.projectKey=Jenkins3 
+ -Dsonar.projectName='Jenkins3' 
+ -Dsonar.host.url=http://localhost:9000 
+ -Dsonar.token=sqp_9536a17b3cb60c3e87d96e0c9a848ed6b0471f3b
+```
+
+Note: ProjectKey, ProjectName & Tokens are generated from sonar itself. 
+
