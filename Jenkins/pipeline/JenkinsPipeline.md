@@ -36,3 +36,53 @@ Jenkinsfile. These are coded in the Groovy DSL.
 3.
 - D:Code is written within a pipeline block
 - S:Code is written within a node block
+
+## Pipeline Concepts
+
+- Pipeline
+- Node: A node is a machine which is a part of Jenkins environment 
+- Stage: Distinct subset of tasks
+- Step: Single task within a stage
+
+## Syntax Comparison
+
+- Declarative Pipeline:
+
+```
+pipeline{
+    agent any
+    stages{
+        stage('Build') {
+            steps{
+                // will contain steps
+            }
+        }
+        stage('Test') {
+            steps{
+                // will contain steps
+            }
+        }
+        stage('Deploy'){
+            steps{
+                // will contain steps
+            }
+        }
+    }
+}
+```
+
+- Scripted Pipeline: 
+
+```
+node{
+    stage('Build'){
+        // will contain steps
+    }
+    stage('Test'){
+        // will contain steps
+    }
+    stage('Deploy'){
+        // will contain steps
+    }
+}
+```
