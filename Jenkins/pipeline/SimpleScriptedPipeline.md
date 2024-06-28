@@ -35,3 +35,15 @@ node {
 
 
 ```
+
+## Simple Scripted Pipeline using for loops:
+
+```dtd
+node {
+    for (int i=0; i<5; i++) {
+        stage('Stage ' + i) {
+            echo "Inside stage " + i
+        }
+    }
+}
+```
